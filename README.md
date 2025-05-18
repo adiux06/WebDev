@@ -1,2 +1,2 @@
-# WebDev1
+# WebDev
 Learning WebDev

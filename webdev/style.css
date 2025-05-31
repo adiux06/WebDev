@@ -1,9 +1,22 @@
-body{
+body {
     background-color: rgb(205, 163, 245);
 }
 
 h1 {
     background-color: rgb(0, 129, 129);
-    border: 5px solid rgb(86, 190, 211); 
+    border: 5px solid rgb(86, 190, 211);
     margin-bottom: auto;
 }
+
+/* li[class^="a"] matches any attribute value which starts with a, so matches the first two list items.
+li[class$="a"] matches any attribute value that ends with a, so matches the first and third list item.
+li[class*="a"] matches any attribute value where a appears anywhere in the string, so it matches all of our list items. */
+.dino {
+    background: #e22b2b;
+}
+
+span[class="dino"] {
+    color: aquamarine;
+    text-shadow: 4px 4px 3px rgb(8, 3, 3);
+}
+

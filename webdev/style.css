@@ -20,3 +20,8 @@ span[class="dino"] {
     text-shadow: 4px 4px 3px rgb(8, 3, 3);
 }
 
+/* universal selector */
+*{
+    margin: 0%;
+}
+

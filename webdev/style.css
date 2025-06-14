@@ -45,11 +45,11 @@ span[class="dino"] {
     box-shadow: 5px 5px 20px;
 }
 
-ul {
+ul.one {
   font-family: sans-serif;
   display: flex;
   list-style: none;
-  border: 2px solid #000;
+  border: 2px solid #f12525;
   padding: 0;
   gap: 15px;
 }
@@ -117,5 +117,8 @@ li.one:hover{
   border: 3px solid black;
   display: flex;
   width: 10%;
-  overflow: hidden;
+  overflow: auto;
+}
+nav ul li{
+  list-style: ;
 }

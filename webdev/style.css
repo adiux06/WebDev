@@ -1,28 +1,28 @@
 body {
-    background-color: rgb(205, 163, 245);
+  background-color: rgb(205, 163, 245);
 }
 
-h1 {
-    background-color: rgb(0, 129, 129);
-    border: 5px solid rgb(86, 190, 211);
-    margin-bottom: auto;
+.heading {
+  background-color: rgb(0, 129, 129);
+  border: 5px solid rgb(86, 190, 211);
+  margin-bottom: auto;
 }
 
 /* li[class^="a"] matches any attribute value which starts with a, so matches the first two list items.
 li[class$="a"] matches any attribute value that ends with a, so matches the first and third list item.
 li[class*="a"] matches any attribute value where a appears anywhere in the string, so it matches all of our list items. */
 .dino {
-    background: #e22b2b;
+  background: #e22b2b;
 }
 
 span[class="dino"] {
-    color: aquamarine;
-    text-shadow: 4px 4px 3px rgb(8, 3, 3);
+  color: aquamarine;
+  text-shadow: 4px 4px 3px rgb(8, 3, 3);
 }
 
 /* universal selector */
-*{
-    margin: 0px;
+* {
+  margin: 0px;
 }
 
 .box {
@@ -35,14 +35,14 @@ span[class="dino"] {
   margin-right: 4em;
   margin-bottom: 40px;
   margin-left: 4em;
-  box-shadow: 9px 9px 15px ;
+  box-shadow: 9px 9px 15px;
 }
 
 
 .container {
-    border: 2px solid black;
-    margin: 40px;
-    box-shadow: 5px 5px 20px;
+  border: 2px solid black;
+  margin: 40px;
+  box-shadow: 5px 5px 20px;
 }
 
 ul.one {
@@ -66,7 +66,8 @@ li.one {
 
 li.one:hover {
   background-color: #90e22b;
-  color: transparent; /* Hide original text */
+  color: transparent;
+  /* Hide original text */
 }
 
 li.one::after {
@@ -86,14 +87,15 @@ li.one:hover::after {
   opacity: 1;
 }
 
-li.one:hover{
+li.one:hover {
   border: 10px solid black;
 }
-li.one:hover{
+
+li.one:hover {
   border: 10px double black;
 }
 
-.sizing-parent{
+.sizing-parent {
   width: 50%;
   height: 300px;
   background: rgb(0, 0, 0);
@@ -101,45 +103,50 @@ li.one:hover{
   margin-bottom: 55px;
 
 }
-.hehe:hover{
+
+.hehe:hover {
   color: #90e22b;
   transition: 0.4s;
   font-size: 100px;
-  
+
 }
-.sizing-child{
+
+.sizing-child {
   background-color: #10d7b66c;
-  width: 250;  
+  width: 250;
   height: 30vmin;
   margin: 30vmin;
 }
-.overflow{
+
+.overflow {
   border: 3px solid black;
   display: flex;
   width: 10%;
   overflow: auto;
 }
-nav ul li{
+
+nav ul li {
   list-style: inside;
   list-style-type: circle;
   background-color: #90e22b;
   border: 3px solid red;
   width: 90px;
   display: inline;
-  
+
 }
 
-.listing{
+.listing {
   border: 5px solid black;
   width: 900px;
   height: 300px;
   overflow-y: auto;
 }
+
 * {
   box-sizing: border-box;
 }
 
-dl > div {
+dl>div {
   background: #fff;
   padding: 24px 0 0 0;
 }
@@ -155,7 +162,8 @@ dt {
     sans-serif;
   margin: 0;
   padding: 2px 0 0 12px;
-  position: -webkit-sticky; /*for older version and safari browser */
+  position: -webkit-sticky;
+  /*for older version and safari browser */
   position: sticky;
   top: -1px;
 }
@@ -170,7 +178,83 @@ dd {
   white-space: nowrap;
 }
 
-dd + dd {
+dd+dd {
   border-top: 1px solid #ccc;
 }
 
+.topbg {
+  width: 500px;
+  height: 650px;
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  margin: 100px auto 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.imgid {
+  width: 95%;
+  height: auto;
+  border-radius: 9px;
+  margin: 10px auto 0;
+}
+
+.bgimage {
+  background-color: #fff;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  /* Shifts the white box downward */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centers horizontally */
+  box-shadow: 1px 1px 4px 2px #00000061;
+}
+
+.bld {
+  border: 1px solid rgba(0, 0, 0, 0.444);
+  border-radius: 6px;
+  position: relative;
+  left: -125px;
+  top: 10px;
+  padding: 4px;
+  color: grey;
+}
+
+.cty {
+  border: 1px solid rgba(0, 0, 0, 0.426);
+  border-radius: 6px;
+  position: relative;
+  left: -120px;
+  top: 10px;
+  padding: 4px;
+  color: grey;
+}
+
+.cardhead {
+  position: relative;
+  top: 10px;
+}
+
+.cardp {
+  position: relative;
+  top: 9px;
+}
+
+.cardb {
+  background-color: #d2dbf7;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: 50px;
+}
+.cardb:hover{
+  background-color: #aebfe0;
+}

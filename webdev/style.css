@@ -39,7 +39,7 @@ span[class="dino"] {
 }
 
 
-.container {
+.containerr {
   border: 2px solid black;
   margin: 40px;
   box-shadow: 5px 5px 20px;
@@ -259,3 +259,5 @@ dd+dd {
 .cardb:hover{
   background-color: #aebfe0;
 }
+
+

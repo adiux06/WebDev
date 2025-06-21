@@ -266,29 +266,70 @@ dd+dd {
   display: grid;
   grid-template-columns: 100px 200px 100px;
 }
-.grid1{
+
+.grid1 {
   background-color: #333;
 }
+
 .grid2 {
   background-color: #90e22b;
-  position: relative; /* add this */
+  position: relative;
+  /* add this */
 }
-.grid3{
+
+.grid3 {
   background-color: turquoise;
 }
-.grid{
+
+.grid {
   background-color: transparent;
 }
-.grid5{
+
+.grid5 {
   background-color: red;
 }
+
 .grid6 {
   background-color: sandybrown;
   position: relative;
   bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px; /* or whatever width fits */
-  height: 70px; /* optional */
+  width: 80px;
+  /* or whatever width fits */
+  height: 70px;
+  /* optional */
 }
 
+#page {
+  display: grid;
+  width: 800px;
+  height: 400px;
+  grid-template-areas:
+    "head head"
+    "nav main"
+    ". foot";
+    grid-template-rows: 100px 2fr 60px;
+  grid-template-columns: 250px 2fr;
+
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+}

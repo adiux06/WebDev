@@ -309,27 +309,44 @@ dd+dd {
     "head head"
     "nav main"
     ". foot";
-    grid-template-rows: 100px 2fr 60px;
+  grid-template-rows: 100px 2fr 60px;
   grid-template-columns: 250px 2fr;
 
 }
 
-#page > header {
+#page>header {
   grid-area: head;
   background-color: #8ca0ff;
 }
 
-#page > nav {
+#page>nav {
   grid-area: nav;
   background-color: #ffa08c;
 }
 
-#page > main {
+#page>main {
   grid-area: main;
   background-color: #ffff64;
 }
 
-#page > footer {
+#page>footer {
   grid-area: foot;
   background-color: #8cffa0;
 }
+
+.tranbox {
+  background-color: #717d85;
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.transition {
+  background-color: rgba(128, 0, 128, 0.76);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform;

@@ -334,19 +334,30 @@ dd+dd {
   background-color: #8cffa0;
 }
 
-.tranbox {
-  background-color: #717d85;
-  position: relative;
-  width: 600px;
-  height: 600px;
-}
 
 .transition {
   background-color: rgba(128, 0, 128, 0.76);
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 10px;
   transition-property: transform;
+}
+
+.transition:hover{
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes rotate{ 
+   0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(-90deg); 
+  }
+}

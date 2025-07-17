@@ -75,3 +75,8 @@ let price = 10.99
 let quantity = 3
 
 console.log(`the price of ${quantity} ${product}s. the total is $${(price * quantity)}`)
+
+let array1 = [ 'a', 'b', 'c', 'd', 'e' ];
+
+array1.copyWithin(0, 3, 4); // copies elements within the array, starting from index 3 to index 4
+console.log(array1); // logs [ 'd', 'b', 'c', 'd', 'e' ]
